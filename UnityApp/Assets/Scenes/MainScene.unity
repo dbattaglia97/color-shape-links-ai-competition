@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -165,6 +166,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -356,8 +358,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dcb4d3020b72515595763554fd5779a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isActive: 1
-  selectedThinker: ColorShapeLinks.Common.AI.Examples.SequentialAIThinker
+  isActive: 0
+  selectedThinker: ColorShapeLinks.Common.AI.Examples.MyMiniMax
   thinkerParams: 
 --- !u!114 &617695837
 MonoBehaviour:
@@ -372,8 +374,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 1
-  selectedThinker: ColorShapeLinks.Common.AI.Examples.RandomAIThinker
-  thinkerParams: 123
+  selectedThinker: ColorShapeLinks.Common.AI.Examples.MyMiniMax
+  thinkerParams: 2
 --- !u!114 &617695838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,7 +389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 1
-  selectedThinker: ColorShapeLinks.Common.AI.Examples.MinimaxAIThinker
+  selectedThinker: ColorShapeLinks.Common.AI.Examples.MiniMax
   thinkerParams: 2
 --- !u!114 &617695839
 MonoBehaviour:
